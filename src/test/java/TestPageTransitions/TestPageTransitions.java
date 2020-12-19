@@ -23,8 +23,8 @@ public class TestPageTransitions
     public void checkFood()
     {
         driver.manage().window().maximize();
-        WebElement getirHomepage = driver.findElement(By.xpath("//*[@id=\"menu-why\"]"));
-        WebElement getirFood= driver.findElement(By.xpath("//*[@id=\"features\"]/div[1]/div/h2"));
+        WebElement getirHomepage = driver.findElement(By.id("menu-why"));
+        WebElement getirFood = driver.findElement(By.id("menu-getiryemek"));
 
         getirHomepage.isDisplayed();
         getirHomepage.click();
@@ -36,7 +36,7 @@ public class TestPageTransitions
     @Test(priority = 2)
     public void checkCareer()
     {
-        WebElement checkCareer = driver.findElement(By.xpath("//*[@id=\"menu-career\"]"));
+        WebElement checkCareer = driver.findElement(By.id("menu-career"));
         checkCareer.click();
 
     }
@@ -44,7 +44,7 @@ public class TestPageTransitions
     @Test(priority = 3)
     public void checkDealerShip()
     {
-        WebElement checkDealerShip = driver.findElement(By.xpath("//*[@id=\"menu-career\"]"));
+        WebElement checkDealerShip = driver.findElement(By.id("menu-franchise"));
         checkDealerShip.click();
 
     }
@@ -52,28 +52,28 @@ public class TestPageTransitions
     @Test(priority = 4)
     public void checkContact()
     {
-        WebElement checkContact = driver.findElement(By.xpath("//*[@id=\"menu-contact\"]"));
+        WebElement checkContact = driver.findElement(By.id("menu-contact"));
         checkContact.click();
 
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void checkCovidAnnouncement()
     {
-        WebElement checkCovidAnnouncement = driver.findElement(By.xpath("//*[@id=\"menu-announcement\"]"));
+        WebElement checkCovidAnnouncement = driver.findElement(By.id("menu-announcement"));
         checkCovidAnnouncement.click();
 
     }
 
-    @Test(priority = 4)
+    @Test(priority = 6)
     public void checkLanguage()
     {
-        WebElement checkLanguage = driver.findElement(By.xpath("//*[@id=\"menu-en\"]"));
+        WebElement checkLanguage = driver.findElement(By.id("menu-en"));
         checkLanguage.click();
 
     }
 
-    @Test(priority = 5)
+    @Test(priority = 7)
     public void closeBrowser()
     {
     driver.close();
