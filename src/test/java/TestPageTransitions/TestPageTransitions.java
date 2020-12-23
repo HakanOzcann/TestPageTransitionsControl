@@ -16,8 +16,8 @@ public class TestPageTransitions
         driver = new ChromeDriver();
         String baseUrl = "https://www.getir.com/";
         driver.get(baseUrl);
-
-    }
+        driver.manage().window().maximize();
+}
 
     @Test(priority = 1)
     public void checkFood()
